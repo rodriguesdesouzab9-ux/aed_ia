@@ -38,7 +38,7 @@ Parâmetros configuráveis (campos da struct): `pop`, `geracoes`, `pc`, `pm`, `p
 
 ## Observação importante para o relatório
 
-O centro do quadrado está a exatamente L/√2 = √200/√2 = 10 km de cada vértice, ou seja, **uma única antena no centro (7,071; 7,071) cobre 100 % da região** (os vértices ficam no limite do raio). O ótimo esperado é, portanto, 1 antena com ~100 % de cobertura, e o AG deve convergir para isso. Vale discutir isso no relatório e mostrar que o algoritmo o redescobre sozinho.
+O centro do quadrado está a exatamente L/√2 = √200/√2 = 10 km de cada vértice, ou seja, **uma única antena no centro (7,071; 7,071) cobre 100 % da região** (os vértices ficam no limite do raio). O ótimo esperado é, portanto, 1 antena com ~100 % de cobertura, e o AG deve chegar até esse resultado. Vale discutir isso no relatório e mostrar que o algoritmo o redescobre sozinho.
 
 Para um cenário em que o compromisso cobertura × número de antenas apareça de fato, rode, por exemplo:
 
