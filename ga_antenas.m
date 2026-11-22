@@ -119,7 +119,7 @@ p.res_grade   = 150;     % grade (res x res) usada durante o AG
 p.res_final   = 1000;    % grade usada para reportar a solucao final
 p.semente     = 1;       % semente do gerador aleatorio
 p.graficos    = true;
-p.animar      = false;   % true: mostra a solucao evoluindo (bom para o video)
+p.animar      = true;   
 p.passo_animacao = 1;
 f = fieldnames(u);
 for i = 1:numel(f), p.(f{i}) = u.(f{i}); end
