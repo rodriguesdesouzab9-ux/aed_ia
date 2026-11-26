@@ -45,17 +45,3 @@ Para um cenário em que o compromisso cobertura × número de antenas apareça d
 ```matlab
 ga_antenas(struct('area_regiao',800))    % lado ~28,3 km: exige várias antenas
 ```
-
-## Roteiro sugerido do relatório
-
-1. Descrição do problema e modelagem (seções acima).
-2. Justificativa dos parâmetros do fitness (`w_cob`, `λ`).
-3. Resultados das 10 execuções (`resultados_execucoes.csv`): média, desvio, mínimo, máximo.
-4. Melhor solução: posições, nº de antenas, área, percentual, fitness (impresso por `executar_experimentos`).
-5. Efeito dos parâmetros (`estudo_parametros.csv`): população pequena × grande, poucas × muitas gerações, `pc` e `pm` baixos/altos, elitismo 0 × alto (perda de diversidade), `λ` (0 → usa todas as antenas; alto → sacrifica cobertura).
-6. Conclusões e limitações (discretização da grade, cenário com ótimo trivial).
-
-## Entrega
-
-- Código no GitHub (estes arquivos + `.csv` e figuras gerados).
-- Vídeo de 3 a 5 min mostrando o AG rodando (`animar = true`), a melhor solução e a análise estatística.
