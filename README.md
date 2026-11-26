@@ -36,12 +36,3 @@ Parâmetros configuráveis (campos da struct): `pop`, `geracoes`, `pc`, `pm`, `p
   Com `w_cob = 1` e `λ = 0,10`, cada antena custa 0,02 de fração de cobertura (2 % da região). Uma antena extra só compensa se cobrir mais de 2 % da região que ainda estava descoberta. A cobertura domina (λ pequeno), mas o AG é induzido a eliminar antenas redundantes. Os dois termos estão normalizados em [0,1], o que facilita interpretar λ.
 - **Seleção:** torneio (k = 3). **Cruzamento:** BLX-α (α = 0,3) nas coordenadas e uniforme nos genes de ativação, aplicado com probabilidade `pc`. **Mutação:** gaussiana nas coordenadas (σ = 10 % de L) com probabilidade `pm` por gene e *bit-flip* nos genes de ativação. **Elitismo:** os `elitismo` melhores passam intactos para a próxima geração.
 
-## Observação importante para o relatório
-
-O centro do quadrado está a exatamente L/√2 = √200/√2 = 10 km de cada vértice, ou seja, **uma única antena no centro (7,071; 7,071) cobre 100 % da região** (os vértices ficam no limite do raio). O ótimo esperado é, portanto, 1 antena com ~100 % de cobertura, e o AG deve chegar até esse resultado. Vale discutir isso no relatório e mostrar que o algoritmo o redescobre sozinho.
-
-Para um cenário em que o compromisso cobertura × número de antenas apareça de fato, rode, por exemplo:
-
-```matlab
-ga_antenas(struct('area_regiao',800))    % lado ~28,3 km: exige várias antenas
-```
